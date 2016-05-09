@@ -26,4 +26,5 @@ RUN git clone https://github.com/SickRage/SickRage.git /opt/sickrage
 
 EXPOSE 8081
 
+CMD ["exec /opt/sickrage/SickBeard.py"]
 
