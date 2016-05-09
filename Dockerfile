@@ -31,5 +31,5 @@ VOLUME  ["/data/sickrage"]
 
 EXPOSE 8081
 
-CMD ["exec /opt/sickrage/SickBeard.py"]
+# CMD ["exec /opt/sickrage/SickBeard.py"]
 
