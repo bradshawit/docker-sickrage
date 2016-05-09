@@ -24,5 +24,5 @@ RUN git clone https://github.com/SickRage/SickRage.git /opt/sickrage
 # Test to see if you can run SickRage
 # python /opt/sickrage/SickBeard.py -d
 
-
+EXPOSE 8081
 
