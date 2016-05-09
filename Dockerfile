@@ -15,7 +15,7 @@ RUN cd /tmp && \
     make -f makefile && \
     install -v -m755 unrar /usr/bin
 
-RUN pip install pyopenssl==0.13.1
+RUN pip install pyopenssl
 
 RUN git clone https://github.com/SickRage/SickRage.git /opt/sickrage
 
