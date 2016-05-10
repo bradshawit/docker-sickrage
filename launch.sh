@@ -3,7 +3,7 @@
 set -e
 
 #service sickrage start &
-exec /opt/sickrage/SickBeard.py &
+exec /opt/sickrage/SickBeard.py --pidfile=/data/sickrage/.sickrage.pid --datadir=/data/sickrage &
 wait
 
 
