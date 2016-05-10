@@ -41,7 +41,7 @@ RUN cp /opt/sickrage/runscripts/init.ubuntu /etc/init.d/sickrage && \
 
 EXPOSE 8081
 
-CMD ["service sickrage start"]
+# CMD ["service sickrage start"]
 
 # CMD ["exec /opt/sickrage/SickBeard.py"]
 
