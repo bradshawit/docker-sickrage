@@ -2,7 +2,8 @@
 
 set -e
 
-service sickrage start &
+#service sickrage start &
+exec /opt/sickrage/SickBeard.py &
 wait
 
 
