@@ -28,15 +28,15 @@ VOLUME  ["/data/torrentfiles"]
 VOLUME  ["/data/tv"]
 VOLUME  ["/data/sickrage"]
 
-RUN touch /etc/default/sickrage && \
-    echo "SR_USER=root" >> /etc/default/sickrage && \
-    echo "SR_HOME=/opt/sickrage" >> /etc/default/sickrage && \
-    echo "SR_DATA=/opt/sickrage" >> /etc/default/sickrage && \
-    echo "SR_PIDFILE=/data/sickrage/.sickrage.pid" >> /etc/default/sickrage
+#RUN touch /etc/default/sickrage && \
+#    echo "SR_USER=root" >> /etc/default/sickrage && \
+#    echo "SR_HOME=/opt/sickrage" >> /etc/default/sickrage && \
+#    echo "SR_DATA=/opt/sickrage" >> /etc/default/sickrage && \
+#    echo "SR_PIDFILE=/data/sickrage/.sickrage.pid" >> /etc/default/sickrage
     
-RUN cp /opt/sickrage/runscripts/init.ubuntu /etc/init.d/sickrage && \
-    chmod +x /etc/init.d/sickrage && \
-    update-rc.d sickrage defaults
+# RUN cp /opt/sickrage/runscripts/init.ubuntu /etc/init.d/sickrage && \
+#    chmod +x /etc/init.d/sickrage && \
+#    update-rc.d sickrage defaults
     
 # Change ownership to your username
 # sudo chown username:username -R /opt/sickrage
