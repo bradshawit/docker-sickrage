@@ -17,6 +17,7 @@ RUN cd /tmp && \
 
 RUN pip install pyopenssl
 
+
 RUN git clone https://github.com/SickRage/SickRage.git /opt/sickrage
 
 VOLUME  ["/data/downloads"]
