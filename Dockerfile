@@ -20,6 +20,9 @@ RUN pip install pyopenssl
 
 RUN git clone https://github.com/SickRage/SickRage.git /opt/sickrage
 
+ADD launch.sh /launch.sh
+RUN chmod +x "/launch.sh"
+
 VOLUME  ["/data/downloads"]
 VOLUME  ["/data/torrentfiles"]
 VOLUME  ["/data/tv"]
@@ -42,7 +45,7 @@ RUN cp /opt/sickrage/runscripts/init.ubuntu /etc/init.d/sickrage && \
 
 EXPOSE 8081
 
-# CMD ["service sickrage start"]
+CMD ["/launch.sh"]
 
 # CMD ["exec /opt/sickrage/SickBeard.py"]
 
