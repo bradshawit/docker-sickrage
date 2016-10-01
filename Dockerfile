@@ -5,13 +5,13 @@ FROM ubuntu:xenial
 RUN apt-get update -q && \
     apt-get upgrade -qy && \
     apt-get install -qy build-essential && \
-    apt-get install -qy libxslt1-dev libxslt1.1 libxml2-dev libxml2 libssl-dev libffi-dev libffi6 libpython-dev libssl-dev python2.7 python-cherrypy python-lxml python2.7-dev && \
-    apt-get install -qy python-pip python-dev libssl-dev && \
+    apt-get install -qy libxslt1-dev libffi-dev libffi6 libpython-dev libssl-dev python2.7 python-cherrypy python-lxml python-pip python2.7-dev && \
     apt-get install -qy git-core wget && \
     apt-get clean
 
 #   apt-get install -qy git wget && \
 #   apt-get install -qy libxslt1-dev libxslt1.1 libxml2-dev libxml2 libssl-dev libffi-dev && \
+#   apt-get install -qy python-pip python-dev libssl-dev && \
 
 RUN cd /tmp && \
     wget http://rarlab.com/rar/unrarsrc-5.2.7.tar.gz && \
